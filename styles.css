@@ -1,0 +1,73 @@
+/*styles*/
+html {
+   background: #E7EBD5; 
+}
+
+.thumbnail{
+text-align:center;
+}
+
+.container{
+display: flex;
+text-align:left;
+margin-left:10px;
+margin-right:10px;
+padding-left:20px;
+/*border-top:1px solid #666;
+border-bottom:1px solid #666;*/
+background-color:rgba(217, 217, 217, 0.2);
+font-family:Droid Sans;
+}
+
+.sharelink {
+display: none;
+}
+
+.container h2{
+display: flex;
+font-family:Oranienbaum;
+}
+header h1{
+text-align:stretch;
+font-family:Roboto Condensed;
+}
+.navig{
+display: flex;
+text-align:center;
+font-family:Oranienbaum;
+/*background-color:rgb(217, 217, 217);*/
+
+}
+.navbar{
+list-style-type:none;
+}
+.navbar li{
+float:left;
+text-align:center;
+text-indent:1em;
+}
+.navbar li a{
+/*background-color:rgb(217, 217, 217);*/
+color:black;
+width:100px;
+text-decoration:none;
+font-weight:bold;
+margin-left:15px;
+margin-right:15px;
+/*transition*/
+-webkit-transition:color .2s ease-out, background .5s ease-in;
+   -moz-transition:color .2s ease-out, background .5s ease-in;
+     -o-transition:color .2s ease-out, background .5s ease-in;
+        transition:color .2s ease-out, background .5s ease-in;
+}
+.navbar li a:hover{
+	/*background-color:rgb(240,240,240);*/
+	color:#DE9700;
+}
+.footer{
+text-align:center;
+font-family:Oranienbaum;
+color:#A3B1AA
+}
+
+
