@@ -4,67 +4,14 @@
 
 <head>
     <title>Black, White and not only...</title>
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="galleria/src/galleria.js"></script>
-
-    <style>
-        .galleria {
-            background: #776363;
-            width: 800px;
-            height: 600px;
-        }
-    </style>
-
-    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
     <title>Time spotter</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="layout.css">
     <link rel="stylesheet" type="text/css" href="sitewide.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,300,800,700,600" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Oranienbaum:400,700,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
-
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-55087037-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
 </head>
 
 <body>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55bfce9c2361bf44" async="async"></script>
-
-
     <p>
         <img src="timespotter.svg" alt="Time Spotter" />
     </p>
@@ -77,40 +24,55 @@
             <li><a href="../For sale.html">For sale</a></li>
         </ul>
     </div>
-    <div align="center">
-        <div class="galleria">
-            <img src="photo1.jpg">
-            <img src="photo2.jpg">
-            <img src="photo3.jpg">
-            <img src="photo4.jpg">
-            <img src="photo5.jpg">
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/photo1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
         </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/photo2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/photo3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/photo4.jpg" style="width:100%">
+            <div class="text">Caption Four</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/photo5.jpg" style="width:100%">
+            <div class="text">Caption Five</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <script>
-        $("body").text("jQuery works");
-    </script>
+    <br>
 
-    <script>
-        (function() {
-            if (Galleria) {
-                $("body").text('Galleria works')
-            }
-        }());
-    </script>
-
-    <script>
-        Galleria.loadTheme('galleria/src/themes/classic/galleria.classic.js');
-
-        Galleria.configure({
-            imageCrop: true,
-            transition: 'fade'
-        });
-
-        Galleria.run('.galleria', {
-            autoplay: 5000 // will move forward every 5 seconds
-        });
-    </script>
-
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
 
     <div class="content">
         <div class="contblk" id="contblk1">
@@ -126,7 +88,9 @@
                 <br>Away for a while. To return back
                 <br>When you don't expect.
 
-                <p>To portray the traits of the nation, to exclude the husk of its history I tried to restrict colorfulness of some pictures. Simple and straight Black and clear and vibrant White, what could be better for the task. Only some impregnation
+                <p>To portray the traits of the nation, to exclude the husk of its history I tried to restrict
+                    colorfulness of some pictures. Simple and straight Black and clear and vibrant White, what could be
+                    better for the task. Only some impregnation
                     of other <strong><i>less important</i></strong> colors.
                 </p>
 
@@ -136,10 +100,8 @@
             </div>
         </div>
     </div>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <div class="addthis_native_toolbox"></div>
     <br>
-    <a href="../index.html"><strong>Back</strong></a>
+    <a href="../index.html"><strong>Home</strong></a>
     <br>
 
 
@@ -147,5 +109,8 @@
         <p> &copy; Elena Perelman 2020</p>
     </div>
 </body>
+
+<link rel="stylesheet" type="text/css" href="../slideshow/slideshow.css">
+<script src='../slideshow/slideshow.js'></script>
 
 </html>
