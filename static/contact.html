@@ -49,70 +49,42 @@
 
 <body>
 
-    <?php
-function spamcheck($field) {
-  // Sanitize e-mail address
-  $field=filter_var($field, FILTER_SANITIZE_EMAIL);
-  // Validate e-mail address
-  if(filter_var($field, FILTER_VALIDATE_EMAIL)) {
-    return TRUE;
-  } else {
-    return FALSE;
-  }
-}
-?>
+    <div id="headerpict"> </div>
 
-        <div id="headerpict"> </div>
+    <p>
+        <img src="/static/timespotter.svg" alt="Time Spotter" />
+    </p>
+    <br>
+    <br>
+    <div class="navig" id="nav">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="For sale.html">For sale</a></li>
+        </ul>
+    </div>
+    <!--  -----------------------------------------------------  -->
+    <div class="contctfrm" div id="contctfrm">
 
-        <p>
-            <img src="/static/timespotter.svg" alt="Time Spotter" />
-        </p>
-        <br>
-        <br>
-        <div class="navig" id="nav">
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="For sale.html">For sale</a></li>
-            </ul>
-        </div>
-        <!--  -----------------------------------------------------  -->
-        <div class="contctfrm" div id="contctfrm">
+        <h2>Share your opinion</h2>
 
-            <h2>Share your opinion</h2>
-
-            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" <br>From: <input type="text" name="from"><br><br> Subject: <input type="text" name="subject"><br> <br>Message: <textarea rows="10" cols="40" name="message"></textarea><br><br>
-                <input type="submit" name="submit" value="Submit">
-            </form>
-            <?php // display form if user has not clicked submit
-if (isset($_POST["submit "])) {
-
-                else { // the user has submitted the form 
-                  // Check if the "from " input field is filled out 
-    if (isset($_POST["from "])) { // Check if "from " email address is valid 
-                $mailcheck = spamcheck($_POST["from "]); 
-                if ($mailcheck==FALSE) { echo "Invalid input "; } 
-                else { $from = $_POST["from "]; // sender 
-                $subject = $_POST["subject "]; 
-                $message = $_POST["message "]; // message lines should not exceed 70 characters (PHP rule), so wrap it 
-                $message = wordwrap($message, 70); // send mail 
-                mail("elenadmin@timesspotter.com "),
-                $subject,
-                $message,
-                "From: $from\n "); 
-                echo "<strong>Thank you for sending feedback</strong>
-                <br>
-                <br>?>
-        </div>
-        <br>
-        <br>
-        <div>
-        </div>
-        <div class=footer>
-            <p> &copy; Elena Perelman 2020</p>
-        </div>
+        <form method="post" action="/api/subscribe">
+            <br>From: <input type="text" name="from"><br>
+            <br> Subject: <input type="text" name="subject"><br>
+            <br>Message: <textarea rows="10" cols="40" name="message"></textarea>
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+    </div>
+    <div class=footer>
+        <p> &copy; Elena Perelman 2020</p>
+    </div>
 </body>
 
 </html>

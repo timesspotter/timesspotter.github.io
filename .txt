@@ -1,1 +1,0 @@
-C:\Users\Lena\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Lena\AppData\Local\Programs\Python\Python310\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\Lena\AppData\Local\GitHubDesktop\bin;C:\Users\Lena\AppData\Local\Programs\Microsoft VS Code\bin
