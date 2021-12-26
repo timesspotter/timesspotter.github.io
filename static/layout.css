@@ -1,0 +1,56 @@
+
+/* layout*/
+header{
+display: flex;
+align-items: center;
+flex-grow: 2;
+}
+
+.logo{
+display: flex;
+}
+
+img{
+height: 1;
+}
+ 
+.flex-container {
+display: flex;
+}
+ 
+.content{
+display:block;
+}
+
+.contblk{
+flex-grow:none;
+display:flex;
+width:1;
+}
+
+.container{
+flex-grow:none;
+display: block;
+/*margin: 10px;*/
+}
+
+.thumbnail{
+display:inline-block;
+width:auto;
+}
+
+.navig{
+display: flex;
+width: auto;
+flex-flow: row wrap;
+flex-grow:1;
+}
+
+.navbar{
+width: auto;
+display: inline-block;
+}
+
+.footer{
+flex: 1 100%;
+}

@@ -1,0 +1,54 @@
+/* general sitewide fonts and colours  */
+
+@font-face {
+font-family: 'Droid Sans', sans-serif;
+}
+
+@font-face {
+font-family: 'Oranienbaum', sans-serif;
+}
+
+@font-face {
+font-family: 'Roboto Condensed', serif;
+}
+
+html{
+font-size: 1em;
+display: block;
+text-align: center;
+}
+
+body {
+margin: 0;
+}
+
+object{
+background-color: background-color:rgba(217, 217, 217, 0.2);
+}
+
+h1 {
+font-size: 3rem;
+}
+
+h2 {
+font-size: 2rem;
+}
+
+h3 {
+font-size:1.2rem;
+}
+
+.navbar{
+font-size: 1.5rem;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+div{
+display: block;
+width:auto;
+}
+}
+

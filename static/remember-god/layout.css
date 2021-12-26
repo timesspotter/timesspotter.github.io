@@ -1,0 +1,55 @@
+
+/* layout*/
+header{
+width: auto;
+align-items: stretch;
+flex-grow: 1;
+
+}
+
+img{
+width: auto;
+align-items: center;
+flex-grow: 1;
+
+}
+
+.flex-container {
+display: flex;
+}
+ 
+.content{
+display:block;
+}
+
+.contblk{
+flex-grow: 1;
+display:flex;
+width: auto;
+}
+
+.container{
+flex-grow:1;
+display: block;
+margin: 10px;
+width: auto;
+}
+
+
+.navig{
+padding: 0;
+display: flex;
+margin: 5px;
+width: auto;
+flex-flow: row wrap;
+flex-grow:1;
+}
+
+.navbar{
+width: auto;
+display: inline-block;
+}
+
+.footer{
+flex: 1 100%;
+}
